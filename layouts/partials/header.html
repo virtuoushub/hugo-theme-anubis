@@ -1,6 +1,17 @@
 <h1 class="site-title">
     <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
 </h1>
+<span class="foo-container">
+    <div class="left">
+        {{ partial "fontawesome.html" "ankh" }}
+    </div>
+    <div>
+        {{ partial "fontawesome.html" "ankh" }}
+    </div>
+    <div class="right">
+        {{ partial "fontawesome.html" "ankh" }}
+    </div>
+</span>
 {{ if .Site.Menus.main }}
     <nav>
         {{ $currentPage := . }}

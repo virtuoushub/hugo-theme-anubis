@@ -533,3 +533,29 @@ ul.language-select > li, ul.footer-menu > li {
         max-width: 10em;
     }
 }
+
+.inline-svg {
+    display: inline-block;
+    height: 1.15rem;
+    width: 1.15rem;
+    /* height: 1rem;
+    width: 1rem; */
+    /* top: 0.15rem; */
+    position: relative;
+}
+
+.left {
+    transform: rotate(90deg);
+    /* order: 5; default is 0 */
+}
+.right {
+    transform: rotate(-90deg);
+    /* order: 6; default is 0 */
+    border: white 1px;
+}
+
+.foo-container {
+    margin-top: 1em;
+    display: flex;
+    vertical-align: top; /* here */
+}
