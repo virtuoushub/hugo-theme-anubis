@@ -5,7 +5,7 @@
 
 <div class="post-info">
     {{ if .Params.date }}
-        <div class="post-date">{{ .Params.date.Format $dateFormat }}</div>
+        <div class="post-date">{{ with .Params.date }}{{ .Format $dateFormat }}{{ end }}</div>
     {{ end }}
     <div class="post-taxonomies">
         {{ if .Params.categories }}
